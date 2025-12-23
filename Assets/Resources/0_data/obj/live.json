@@ -1,0 +1,123 @@
+[
+  {
+    "id": 0,
+    "rawname": "Lnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "null"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.0,
+        "health": 1.0,
+        "atk": 1.0,
+        "speed": 1.0,
+        "dieAnimation": null
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 0.0,
+        "magicIds": []
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Lplayer",
+    "name": "玩家",
+    "description": "这个是玩家",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "player"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.6,
+        "health": 10,
+        "atk": 1,
+        "def": 1,
+        "speed": 5.0,
+        "atkSpeed": 1.0,
+        "dieAnimation": "die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 6.0,
+        "magicIds": [
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          },
+          {
+            "id": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "LtestEnemy",
+    "name": "测试敌人",
+    "description": "一个测试用的敌人",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "testEnemy"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.8,
+        "health": 5.0,
+        "atk": 1.0,
+        "speed": 2.0,
+        "atkSpeed": 1.0,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 100.0,
+        "magicIds": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Lcy",
+    "name": "残影",
+    "description": "一个奇怪的残影",
+    "configs": [
+      {
+        "$type": "DLcy_3, Assembly-CSharp",
+        "materialName": "cy"
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "cy"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.0,
+        "health": 1.0,
+        "atk": 1.0,
+        "speed": 1.0,
+        "atkSpeed": 1.0,
+        "dieAnimation": null
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 0.0,
+        "magicIds": []
+      }
+    ]
+  }
+]

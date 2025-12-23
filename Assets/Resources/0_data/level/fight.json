@@ -1,0 +1,135 @@
+[
+  {
+    "id": 0,
+    "rawname": "LFInulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DLFfight, Assembly-CSharp",
+        "fightTurns":[
+          {
+            "index": 0,
+            "time": 0.3,
+            "enemyID": [
+              1,2
+            ],
+            "enemyCnt": [
+              3,1 
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "fight",
+        "canMeet": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "LFIgrass",
+    "name": "草原战斗",
+    "description": "草原上的战斗",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DLFfight, Assembly-CSharp",
+        "fightTurns": [
+          {
+            "index": 0,
+            "time": 0.3,
+            "enemyID": [
+              1, 2
+            ],
+            "enemyCnt": [
+              3, 1
+            ]
+          },
+          {
+            "index": 1,
+            "time": 3.3,
+            "enemyID": [
+              1, 2
+            ],
+            "enemyCnt": [
+              3, 1
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 1,
+        "typeStr": "fight",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "LFIcyboss",
+    "name": "草原boss",
+    "description": "草原boss战斗",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "*fight*1*floor"
+      },
+      {
+        "$type": "DLFfight, Assembly-CSharp",
+        "fightTurns": [
+          {
+            "index": 0,
+            "time": 0.3,
+            "enemyID": [
+              1,
+              2
+            ],
+            "enemyCnt": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 1,
+        "typeStr": "bossFight",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  }
+
+
+
+
+]

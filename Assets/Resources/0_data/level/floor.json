@@ -1,0 +1,400 @@
+[
+  {
+    "id": 0,
+    "rawname": "LFnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "fight",
+        "canMeet": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "LFgrass",
+    "name": "草原",
+    "description": "可能是草原",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "floorBase",
+    "name": "场景基础",
+    "description": "基本的场景",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "testFloor"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor", "test"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "LFsimple",
+    "name": "战斗",
+    "description": "战斗场景，里面有一些敌人和BOSS",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "simpleFloor"
+      },
+      {
+        "$type": "DLFbaseWall, Assembly-CSharp",
+        "wall": "cube"
+      },
+      {
+        "$type": "DLFfight, Assembly-CSharp",
+        "fightTurns":[
+          {
+            "index": 0,
+            "time": 0.3,
+            "enemyID": [
+              1,2
+            ],
+            "enemyCnt": [
+              3,1 
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "fight",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor","test"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "LFmain",
+    "name": "主世界",
+    "description": "一切的开始",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "start",
+        "canMeet": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "LFdjf",
+    "name": "道具",
+    "description": "里面有宝箱，可以获取道具",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "treaFloor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "treasureGood",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "LFfightBase",
+    "name": "战斗场景基础",
+    "description": "一个基本的战斗场景",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DLFfightBase_6, Assembly-CSharp",
+        "warningTime": 0.8
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "fight",
+        "canMeet": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rawname": "LFgrassFight",
+    "name": "测试战斗1[不用]",
+    "description": "测试战斗场景",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DLFfight, Assembly-CSharp",
+        "fightTurns":[
+          {
+            "index": 0,
+            "time": 0.3,
+            "enemyID": [
+              1,2
+            ],
+            "enemyCnt": [
+              3,1 
+            ]
+          },
+          {
+            "index": 1,
+            "time": 2.3,
+            "enemyID": [
+              1,2
+            ],
+            "enemyCnt": [
+              3,1 
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 1,
+        "typeStr": "fight",
+        "canMeet": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rawname": "LFsfzd",
+    "name": "始发之地",
+    "description": "整个地图的开始处，有很多初始资源",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "start",
+        "canMeet": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rawname": "LFqs",
+    "name": "起始",
+    "description": "每个环境最开始的地方",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "start",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rawname": "LFthing",
+    "name": "奇遇",
+    "description": "会遇到各种奇奇怪怪的事情与抉择",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "thing",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rawname": "LFtreaMagic",
+    "name": "魔法",
+    "description": "里面有宝箱，可以获取魔法",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "tresureMagic",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rawname": "LFwzd",
+    "name": "物资",
+    "description": "会有一些金币和零散的强化石",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "wzd",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rawname": "LFshop",
+    "name": "商店",
+    "description": "可以消耗金币购买道具、魔法的地方",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "shop",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rawname": "LFdzt",
+    "name": "锻造",
+    "description": "锻造处，可以强化魔法并给予额外的强化槽位，掉落强化石",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "floor"
+      },
+      {
+        "$type": "DFloor, Assembly-CSharp",
+        "fromEnv": 0,
+        "typeStr": "forge",
+        "canMeet": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "floor"
+        ]
+      }
+    ]
+  }
+
+
+]

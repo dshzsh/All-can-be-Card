@@ -1,0 +1,259 @@
+[
+  {
+    "id": 0,
+    "rawname": "GAnulll",
+    "name": "空",
+    "description": "value定义：1的总价值带来100%的提升",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "none",
+        "color": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "GAattbase",
+    "name": "属性模板",
+    "description": "所有属性的基类",
+    "configs": []
+  },
+  {
+    "id": 2,
+    "rawname": "GAhealthMax",
+    "name": "生命上限",
+    "description": "所能拥有的生命值的上限",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "HealthMax",
+        "color": "#1AFF00",
+        "value": 0.1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "GAmanaMax",
+    "name": "法力上限",
+    "description": "所能拥有的法力值的上限，基础自带{recoverRate,%}/s的法力恢复",
+    "configs": [
+      {
+        "$type": "DGAmanaMax_3, Assembly-CSharp",
+        "recoverRate": 0.2
+      },
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "ManaMax",
+        "color": "#00FEFF",
+        "value": 0.1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "GAatk",
+    "name": "攻击",
+    "description": "影响技能的释放伤害",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "Atk",
+        "color": "#FF4400",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "GAdef",
+    "name": "防御",
+    "description": "减少受到的伤害\n当前减伤：{Reduce,%}",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "Def",
+        "color": "#AB6800",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "GAatkSpeed",
+    "name": "攻击速度",
+    "description": "加快技能的释放速度，减少前后摇时长",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "AtkSpeed",
+        "color": "#FF9B00",
+        "value": 0.5,
+        "percentShow": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rawname": "GAspeed",
+    "name": "移动速度",
+    "description": "当前的移动速度，以m/s为单位",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "Speed",
+        "color": "#EC00FF",
+        "value": 0.2
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rawname": "GAcost",
+    "name": "耗魔",
+    "description": "技能释放需要消耗多少法力值",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "cost",
+        "color": "#00FEFF",
+        "isLiveAtt": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rawname": "GAcd",
+    "name": "冷却",
+    "description": "技能需要多少时间后才能再次释放",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "cd",
+        "color": "#007EFF",
+        "isLiveAtt": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rawname": "GApow",
+    "name": "威力",
+    "description": "物品的属性，影响中括号[]内的数值大小",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "pow",
+        "color": "#8100FF",
+        "isLiveAtt": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rawname": "GAcrit",
+    "name": "暴击率",
+    "description": "造成伤害时，有多少的概率产生基于暴击伤害的额外伤害\n暴击时伤害数字前会有\"C\"符号",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "crit",
+        "color": "#FF0000",
+        "value": 1,
+        "percentShow": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rawname": "GAcritDam",
+    "name": "暴击伤害",
+    "description": "造成暴击时，额外产生多少伤害",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "critDam",
+        "color": "#FF0000",
+        "value": 0.5,
+        "percentShow": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rawname": "GAluck",
+    "name": "幸运",
+    "description": "影响技能的一些概率\n增加遇到高稀有度物品的概率\n\n对于吃幸运的技能来讲，差不多0.1点幸运能带来10%的总提升的样子",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "luck",
+        "color": "#00FF00",
+        "value": 1,
+        "isLiveAtt": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rawname": "GAhzsd",
+    "name": "回转速度",
+    "description": "每s技能会回转多少冷却",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "cdSpeed",
+        "color": "#007EFF",
+        "value": 1.0,
+        "isLiveAtt": true,
+        "percentShow": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rawname": "GAusePow",
+    "name": "释放威力",
+    "description": "使技能释放时的威力增加",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "usepow",
+        "color": "#8100FF",
+        "isLiveAtt": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "rawname": "GAuseDis",
+    "name": "施法距离",
+    "description": "技能释放位置与自身的距离不会超过这个距离",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "usedis",
+        "color": "#FFAF00",
+        "isLiveAtt": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "rawname": "GAsize",
+    "name": "大小",
+    "description": "物体的大小\n\n效果生效的扳机位置在给予属性的位置处",
+    "configs": [
+      {
+        "$type": "DGAattbase_1, Assembly-CSharp",
+        "att": "size",
+        "color": "#FFAF00",
+        "isLiveAtt": false
+      }
+    ]
+  }
+
+
+
+]

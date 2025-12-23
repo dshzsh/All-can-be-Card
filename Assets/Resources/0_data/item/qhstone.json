@@ -1,0 +1,1632 @@
+[
+  {
+    "id": 0,
+    "rawname": "Qnulll",
+    "name": "空",
+    "description": "不额外说明的情况下，强化石都只生效于其佩戴的技能",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature" : false
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Gssqh",
+    "name": "散射强化",
+    "description": "魔法额外以[exPow,pow]向0~{scatterRange}度偏移方向生效{exTimes}次",
+    "configs": [
+      {
+        "$type": "DGssqh_1, Assembly-CSharp",
+        "exPow": 0.2,
+        "scatterRange": 10.0,
+        "exTimes": 2
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.2
+        },
+        "costRevise": {
+          "DirectMul": 0.2
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "Gcfqh",
+    "name": "触发强化",
+    "description": "后摇阶段后，以[exPow,pow]追加释放魔法{magic,++}的复制，耗魔与冷却照常",
+    "configs": [
+      {
+        "$type": "DGcfqh_2, Assembly-CSharp",
+        "exPow": 0.8
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Gwlqh",
+    "name": "威力强化",
+    "description": "使魔法释放时[powRevise,pow]",
+    "configs": [
+      {
+        "$type": "DGwlqh_3, Assembly-CSharp",
+        "exPow": 0.12,
+        "powRevise": null
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "Ggzqh",
+    "name": "跟踪强化",
+    "description": "使得魔法物体获得跟踪效果，以[angleRate]度/s修正自身方向，转向最近的敌人",
+    "configs": [
+      {
+        "$type": "DGgzqh_4, Assembly-CSharp",
+        "angleRate": 120.0
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "GgzqhAdd",
+    "name": "跟踪目标-魔法物体",
+    "description": "以[angleRate]度/s修正自身方向，转向最近的敌人",
+    "configs": [
+      {
+        "$type": "DGgzqhAdd_5, Assembly-CSharp",
+        "findEnemyInterval": 0.2,
+        "baseGzAngle": 180
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "Gylqh",
+    "name": "陨落强化",
+    "description": "魔法物体速度*[speedUp]，改为在目标位置上空向下落下",
+    "configs": [
+      {
+        "$type": "DGylqh_6, Assembly-CSharp",
+        "speedUp": 2.0,
+        "UpPos": 8.0
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rawname": "Gcyqh",
+    "name": "残影强化",
+    "description": "技能改为召唤残影释放技能\n *残影不会触发此效果\n *残影释放的为技能的复制",
+    "configs": [
+      {
+        "$type": "DGcyqh_7, Assembly-CSharp",
+        "fadeTime": 0.5
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "costRevise": {
+          "value": 0.2
+        },
+        "cdRevise": {
+          "value": 0.2
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rawname": "Ghyfj",
+    "name": "火焰附加",
+    "description": "使得魔法物体灼烧命中的单位，每{interval}s造成[damage,Atk]伤害，持续{time}s(不可叠加)",
+    "configs": [
+      {
+        "$type": "DGhyfj_8, Assembly-CSharp",
+        "interval": 1.0,
+        "damage": 0.1,
+        "time": 3.0
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone","GBzs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rawname": "Gjtqh",
+    "name": "击退强化",
+    "description": "使得魔法物体击退命中的单位\n力大小：[force]",
+    "configs": [
+      {
+        "$type": "DGjtqh_9, Assembly-CSharp",
+        "force": 2.0,
+        "time": 0.1
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature" : true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rawname": "GCjtqh",
+    "name": "击退附加",
+    "description": "碰撞后，击退命中的单位",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rawname": "Gqhsbase",
+    "name": "强化石基础",
+    "description": "在此基础上派生强化石",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rawname": "Gxlmk",
+    "name": "蓄力模块",
+    "description": "持有此模块的魔法可以蓄力至多{time}s达到最大效果",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "ChargeBar"
+      },
+      {
+        "$type": "DGxlmk_12, Assembly-CSharp",
+        "chargeSpeedDown":{
+          "finalMul": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rawname": "GCitemObj",
+    "name": "掉落物[弃用]",
+    "description": "物体的掉落物。内部物体：{card,+}",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "itemObj"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rawname": "Ghmjs",
+    "name": "耗魔减少",
+    "description": "使魔法[costRevise,cost]",
+    "configs": [
+      {
+        "$type": "DGhmjs_14, Assembly-CSharp",
+        "reduce": 0.3
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rawname": "GQwfxx",
+    "name": "无法卸下",
+    "description": "这个物体的附着物体无法卸下",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "rawname": "GQmj",
+    "name": "猛击",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.5
+        },
+        "costRevise": {
+          "DirectMul": 0.5
+        },
+        "powRevise": {
+          "DirectMul": 0.5
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "rawname": "GQdx",
+    "name": "大型",
+    "description": "魔法物体大小+[sizeAdd,%]",
+    "configs": [
+      {
+        "$type": "DGQdx_17, Assembly-CSharp",
+        "sizeAdd": 0.3
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "costRevise": {
+          "DirectMul": 0.2
+        },
+        "powRevise": {
+          "DirectMul": 0.1
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone","bullet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "rawname": "GQqbh",
+    "name": "轻便化",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": -0.3
+        },
+        "costRevise": {
+          "DirectMul": -0.3
+        },
+        "powRevise": {
+          "DirectMul": -0.3
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "rawname": "GQcfh",
+    "name": "超负荷",
+    "description": "技能释放完成后赋予自身{stunTimeRate,%}冷却时间的{card,*buff*11}",
+    "configs": [
+      {
+        "$type": "DGQcfh_19, Assembly-CSharp",
+        "stunTimeRate": 0.4
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "usePowRevise": {
+          "DirectMul": 0.4
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "rawname": "GQyxfj",
+    "name": "晕眩附加",
+    "description": "使魔法物体赋予命中的目标{time}s{card,*buff*11}",
+    "configs": [
+      {
+        "$type": "DGQyxfj_20, Assembly-CSharp",
+        "time": 0.5
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "value": 0.5
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "rawname": "GQgh",
+    "name": "光辉",
+    "description": "使魔法物体发光\n *强度：[intensity]\n *颜色：{color}",
+    "configs": [
+      {
+        "$type": "DGQgh_21, Assembly-CSharp",
+        "intensity": 2
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "powRevise": {
+          "DirectMul": 0.1
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "rawname": "GQCgh",
+    "name": "光辉发光",
+    "description": "让自己发光！\n *颜色：{color}",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "Point Light"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "rawname": "GQzdh",
+    "name": "自动化",
+    "description": "每隔技能冷却时间自动触发一次[powRate,pow]技能效果\n *触发无消耗，至少间隔{minInterval}s",
+    "configs": [
+      {
+        "$type": "DGQzdh_23, Assembly-CSharp",
+        "powRate": 0.4,
+        "minInterval": 1
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.5
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "rawname": "GQyjqh",
+    "name": "永久强化",
+    "description": "装配后，永久使技能[powQh,pow]，然后消耗此道具",
+    "configs": [
+      {
+        "$type": "DGQyjqh_24, Assembly-CSharp",
+        "powQh": {
+          "value": 0.1
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "rawname": "GQsxqh",
+    "name": "三向强化",
+    "description": "技能释放时向前左右三个方向同时释放",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "finalMul": 1.4
+        },
+        "costRevise": {
+          "finalMul": 1.4
+        },
+        "usePowRevise": {
+          "finalMul": 0.7
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "rawname": "GQecqh",
+    "name": "二叉强化",
+    "description": "技能释放时向前方两侧方向同时释放",
+    "configs": [
+      {
+        "$type": "DGQecqh_26, Assembly-CSharp",
+        "angle": 30
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "finalMul": 1.2
+        },
+        "costRevise": {
+          "finalMul": 1.2
+        },
+        "usePowRevise": {
+          "finalMul": 0.8
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "rawname": "GQsyqh",
+    "name": "使用强化",
+    "description": "释放技能时，以[exPow,pow]威力无前后摇瞬间释放魔法{magic,++}的复制，享受已经生效的释放效果，耗魔与冷却照常",
+    "configs": [
+      {
+        "$type": "DGQsyqh_27, Assembly-CSharp",
+        "exPow": 0.7
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "rawname": "GQcasf",
+    "name": "长按施法",
+    "description": "长按技能持续尝试施法",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "costRevise": {
+          "DirectMul": -0.1
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "rawname": "GQjs",
+    "name": "溅射",
+    "description": "魔法物体命中产生{range}m范围溅射，造成[damageRate,%]伤害\n *溅射不触发额外效果",
+    "configs": [
+      {
+        "$type": "DGQjs_29, Assembly-CSharp",
+        "damageRate": 0.3,
+        "range": 1.4
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.3
+        },
+        "costRevise": {
+          "DirectMul": 0.3
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "rawname": "GQCjs",
+    "name": "溅射-魔法物体",
+    "description": "命中后产生溅射效果",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "rawname": "GQcjjs",
+    "name": "超级溅射",
+    "description": "魔法物体命中产生{range}m范围溅射，造成[damageRate,%]伤害\n *溅射<color=[C重要]>触发所有额外效果</color>(此效果除外)",
+    "configs": [
+      {
+        "$type": "DGQcjjs_31, Assembly-CSharp",
+        "damageRate": 0.4,
+        "range": 1.6
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.3
+        },
+        "costRevise": {
+          "DirectMul": 0.5
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "rawname": "GQCcjqh",
+    "name": "超级溅射-魔法物体",
+    "description": "命中后产生超级溅射效果",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "rawname": "GQtlzs",
+    "name": "贪婪之手",
+    "description": "斩杀敌人掉落[coin]金币\n *对衍生的敌人不生效",
+    "configs": [
+      {
+        "$type": "DGQtlzs_33, Assembly-CSharp",
+        "coin": 3
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "rawname": "GQCtlzs",
+    "name": "贪婪之手-魔法物体",
+    "description": "斩杀敌人掉落金币\n *对衍生的敌人不生效",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "rawname": "GQhzl",
+    "name": "后坐力",
+    "description": "释放魔法后，产生[force,-]的后坐力",
+    "configs": [
+      {
+        "$type": "DGQhzl_35, Assembly-CSharp",
+        "force": 2
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "usePowRevise": {
+          "value": 0.0,
+          "DirectMul": 0.2,
+          "finalMul": 1.0,
+          "finalAdd": 0.0
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "rawname": "GQjbrf",
+    "name": "健步如飞",
+    "description": "召唤物[att]",
+    "configs": [
+      {
+        "$type": "DGQjbrf_36, Assembly-CSharp",
+        "attData":{
+          "att": "speed",
+          "revise": {
+            "finalMul": 1.4
+          }
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "powRevise": {
+          "DirectMul": 0.1
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone","ysw"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "rawname": "GQjj",
+    "name": "狙击",
+    "description": "魔法物体每移动1m伤害+[damPerM,%]",
+    "configs": [
+      {
+        "$type": "DGQjj_37, Assembly-CSharp",
+        "damPerM": 0.08
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "rawname": "GQCjj",
+    "name": "狙击-魔法物体",
+    "description": "魔法物体每移动1m伤害+[damPerM,%]",
+    "configs": [
+      
+    ]
+  },
+  {
+    "id": 39,
+    "rawname": "GQcolor",
+    "name": "颜色",
+    "description": "让魔法物体颜色变化\n *颜色：{color}",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "powRevise": {
+          "DirectMul": 0.1
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "rawname": "GQCcolor",
+    "name": "颜色-魔法物体",
+    "description": "让魔法物体颜色变化\n *附加颜色：{color}",
+    "configs": [
+      
+    ]
+  },
+  {
+    "id": 41,
+    "rawname": "GQfl",
+    "name": "分裂",
+    "description": "魔法物体在{timePer,%}时间后，分裂成{cnt}个[flPow,pow]的复制\n *分裂后有0~{scatter}度的散射，至多{posShift,%}的位置偏移",
+    "configs": [
+      {
+        "$type": "DGQfl_41, Assembly-CSharp",
+        "timePer": 0.5,
+        "flPow": 0.4,
+        "cnt": 3,
+        "scatter": 10,
+        "posShift": 0.8
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "rawname": "GQCfl",
+    "name": "分裂-魔法物体",
+    "description": "魔法物体在{timePer,%}时间后，分裂成{cnt}个{flPow,pow}的复制",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "rawname": "GQCxj",
+    "name": "迅击旋转-魔法物体",
+    "description": "转起来",
+    "configs": [
+      {
+        "$type": "DGQCxj_43, Assembly-CSharp",
+        "rotSpeed": 5
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "rawname": "GQsmqy",
+    "name": "生命契约",
+    "description": "魔法[costReducePer,%]的法力消耗改为生命承担\n *每点减少的法力消耗{healthPerManaCost}生命值",
+    "configs": [
+      {
+        "$type": "DGQsmqy_44, Assembly-CSharp",
+        "costReducePer":0.5,
+        "healthPerManaCost": 4
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": -0.2
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "rawname": "GQCsmqy",
+    "name": "生命契约-记录",
+    "description": "记录应该消耗多少生命值",
+    "configs": []
+  },
+  {
+    "id": 46,
+    "rawname": "GQhl",
+    "name": "混乱",
+    "description": "魔法物体分裂成{cnt}个位置偏移，方向偏移，[bulletPow,pow]的复制\n *位置偏移至多{posShift,%}，方向至多偏移{dirShift}度",
+    "configs": [
+      {
+        "$type": "DGQhl_46, Assembly-CSharp",
+        "cnt": 5,
+        "bulletPow": 0.3,
+        "dirShift": 20,
+        "posShift": 0.6
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.3
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "rawname": "GQChl",
+    "name": "混乱-魔法物体",
+    "description": "会分裂",
+    "configs": []
+  },
+  {
+    "id": 48,
+    "rawname": "GQhlqx",
+    "name": "火力倾泻",
+    "description": "魔法物体分裂成{cnt}个位置偏移，[bulletPow,pow]的复制，方向锁定离施法位置最近的敌人\n *位置偏移至多{posShift}m",
+    "configs": [
+      {
+        "$type": "DGQhlqx_48, Assembly-CSharp",
+        "cnt": 3,
+        "bulletPow": 0.4,
+        "posShift": 0.5
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.2
+        },
+        "costRevise": {
+          "DirectMul": 0.3
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "rawname": "GQChlqx",
+    "name": "火力倾泻-魔法物体",
+    "description": "初始分裂",
+    "configs": []
+  },
+  {
+    "id": 50,
+    "rawname": "GQCsetParent",
+    "name": "设置父物体-魔法物体",
+    "description": "将{transform}设置为父物体",
+    "configs": []
+  },
+  {
+    "id": 51,
+    "rawname": "GQbz",
+    "name": "爆炸-魔法物体",
+    "description": "产生范围爆炸",
+    "configs": []
+  },
+  {
+    "id": 52,
+    "rawname": "GQyc",
+    "name": "延迟",
+    "description": "魔法物体[powAdd,pow]，但延迟{timeDelay}s产生",
+    "configs": [
+      {
+        "$type": "DGQyc_52, Assembly-CSharp",
+        "powAdd":{
+          "DirectMul": 0.3
+        },
+        "timeDelay": 1,
+        "magicCircle": "magicCircle"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "rawname": "GQCyc",
+    "name": "延迟-魔法物体",
+    "description": "延迟产生",
+    "configs": []
+  },
+  {
+    "id": 54,
+    "rawname": "GQbh",
+    "name": "饱和",
+    "description": "生命值全满时生效，[powRevise,usepow]",
+    "configs": [
+      {
+        "$type": "DGQbh_54, Assembly-CSharp",
+        "powRevise": {
+          "finalMul": 1.3
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "rawname": "GQylyd",
+    "name": "越来越大",
+    "description": "魔法物体随着时间强化，最高在100%的时间时获得[sizeAdd,size]，[powAdd,pow]\n\n这个效果不会吃到子弹威力的提升，不然就左脚踩右脚了\n本来想取名雪球的，但是越来越小就不好取名了",
+    "configs": [
+      {
+        "$type": "DGQylyd_55, Assembly-CSharp",
+        "sizeAdd": {
+          "DirectMul": 0.6
+        },
+        "powAdd": {
+          "DirectMul": 0.6
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "rawname": "Cylyd",
+    "name": "越来越大-魔法物体",
+    "description": "越来越大的魔法物体附加效果",
+    "configs": []
+  },
+  {
+    "id": 57,
+    "rawname": "GQCycbp",
+    "name": "延迟爆破-魔法物体",
+    "description": "魔法物体不再碰撞造成伤害，并且在销毁时爆炸",
+    "configs": []
+  },
+  {
+    "id": 58,
+    "rawname": "GQylyx",
+    "name": "越来越小",
+    "description": "魔法物体初始获得[initSizeAdd,size]，[initPowAdd,pow]；但逐渐弱化，至多在100%的时间时{sizeAdd,size}，{powAdd,pow}\n\n这个效果不会吃到子弹威力的提升，不然就左脚踩右脚了",
+    "configs": [
+      {
+        "$type": "DGQylyx_58, Assembly-CSharp",
+        "sizeAdd": {
+          "DirectMul": -1.3
+        },
+        "powAdd": {
+          "DirectMul": -1.2
+        },
+        "initSizeAdd": {
+          "DirectMul": 0.4
+        },
+        "initPowAdd": {
+          "DirectMul": 0.3
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "rawname": "GQCfollow",
+    "name": "跟随-魔法物体",
+    "description": "使得魔法物体会随着本体的移动而移动位置",
+    "configs": []
+  },
+  {
+    "id": 60,
+    "rawname": "GQpzlq",
+    "name": "碰撞冷却",
+    "description": "魔法物体造成伤害后，回转魔法[cdRecover,%]冷却",
+    "configs": [
+      {
+        "$type": "DGQpzlq_60, Assembly-CSharp",
+        "cdRecover": 0.06
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "rawname": "GQCpzlq",
+    "name": "碰撞冷却-魔法物体",
+    "description": "空",
+    "configs": []
+  },
+  {
+    "id": 62,
+    "rawname": "GQCyzz",
+    "name": "一字斩碰撞冷却-魔法物体",
+    "description": "空",
+    "configs": []
+  },
+  {
+    "id": 63,
+    "rawname": "GQCewcc",
+    "name": "额外存储-组件",
+    "description": "额外存储的组件，放在魔法上可以存储额外的冷却，释放魔法后可以释放存储的冷却\n存储时间：{exTime}/{exTimeMax}",
+    "configs": [
+      {
+        "$type": "DGQCewcc_63, Assembly-CSharp",
+        "goodUI":"ewccGoodUI"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "rawname": "GQewcc",
+    "name": "额外存储",
+    "description": "可以额外存储[exTimeMax]次技能",
+    "configs": [
+      {
+        "$type": "DGQewcc_64, Assembly-CSharp",
+        "exTimeMax": 1
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.2
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "rawname": "GQzsfj",
+    "name": "真伤附加",
+    "description": "魔法物体附加[damageRate,%]的{card,*tag*3}\n *这个额外伤害不触发魔法物体的伤害效果",
+    "configs": [
+      {
+        "$type": "DGQzsfj_65, Assembly-CSharp",
+        "damageRate": 0.1
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "rawname": "GQCzsfj",
+    "name": "真伤附加-魔法物体",
+    "description": "附加真实伤害",
+    "configs": []
+  },
+  {
+    "id": 67,
+    "rawname": "GQldfj",
+    "name": "雷电附加",
+    "description": "魔法物体首次命中后，落雷造成[damageRate,%]伤害",
+    "configs": [
+      {
+        "$type": "DGQldfj_67, Assembly-CSharp",
+        "damageRate": 0.2
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone","GBlt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "rawname": "GQCldfj",
+    "name": "雷电附加-魔法物体",
+    "description": "额外落雷",
+    "configs": []
+  },
+  {
+    "id": 69,
+    "rawname": "GQyl",
+    "name": "引雷",
+    "description": "魔法物体命中后引雷，在{delay}s后落雷造成[damageRate,%]伤害",
+    "configs": [
+      {
+        "$type": "DGQyl_69, Assembly-CSharp",
+        "damageRate": 0.3,
+        "delay": 0.8
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.2
+        },
+        "costRevise": {
+          "DirectMul": 0.2
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone","GBlt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "rawname": "GQbtbx",
+    "name": "奔腾不息",
+    "description": "每次产生魔法物体后，立刻回转技能[cdRecover]s冷却",
+    "configs": [
+      {
+        "$type": "DGQbtbx_70, Assembly-CSharp",
+        "cdRecover": 0.06
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "DirectMul": 0.3
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone","GBlt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "rawname": "GQfr",
+    "name": "焚刃",
+    "description": "魔法物体造成的伤害提升，数值等同[zsPow,%]目标的灼烧伤害",
+    "configs": [
+      {
+        "$type": "DGQfr_71, Assembly-CSharp",
+        "zsPow": 1
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone","GBzs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "rawname": "GQCfr",
+    "name": "触发灼烧-魔法物体",
+    "description": "空",
+    "configs": []
+  },
+  {
+    "id": 73,
+    "rawname": "GQjd",
+    "name": "截断",
+    "description": "魔法物体命中后，施加[att1]，[att2]\n *持续{time}s，不可叠加",
+    "configs": [
+      {
+        "$type": "DGQjd_73, Assembly-CSharp",
+        "att1Data":{
+          "att":"atk",
+          "revise": {
+            "DirectMul": -0.1
+          }
+        },
+        "att2Data":{
+          "att":"def",
+          "revise": {
+            "DirectMul": -0.1
+          }
+        },
+        "time": 3
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "rawname": "GQCfr",
+    "name": "焚刃-魔法物体",
+    "description": "空",
+    "configs": []
+  },
+  {
+    "id": 75,
+    "rawname": "GQCshy",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "DGqhsbase_11, Assembly-CSharp",
+        "cdRevise": {
+          "value": 0.0,
+          "DirectMul": 0.0,
+          "finalMul": 1.0,
+          "finalAdd": 0.0
+        },
+        "costRevise": {
+          "value": 0.0,
+          "DirectMul": 0.0,
+          "finalMul": 1.0,
+          "finalAdd": 0.0
+        },
+        "powRevise": {
+          "value": 0.0,
+          "DirectMul": 0.0,
+          "finalMul": 1.0,
+          "finalAdd": 0.0
+        },
+        "usePowRevise": {
+          "value": 0.0,
+          "DirectMul": 0.0,
+          "finalMul": 1.0,
+          "finalAdd": 0.0
+        }
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "qhstone"
+        ]
+      }
+    ]
+  }
+
+
+
+
+
+]

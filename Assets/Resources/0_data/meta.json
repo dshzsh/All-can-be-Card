@@ -1,0 +1,91 @@
+[
+  {
+    "fName": "card",
+    "headString": "C"
+  },
+  {
+    "fName": "att",
+    "folder": "item/",
+    "headString": "GA"
+  },
+  {
+    "fName": "magic",
+    "folder": "item/",
+    "headString": "M"
+  },
+  {
+    "fName": "bullet",
+    "folder": "obj/",
+    "headString": "B"
+  },
+  {
+    "fName": "good",
+    "folder": "item/",
+    "headString": "G"
+  },
+  {
+    "fName": "rule",
+    "folder": "item/",
+    "headString": "GR"
+  },
+  {
+    "fName": "qhstone",
+    "folder": "item/",
+    "headString": "GQ"
+  },
+  {
+    "fName": "buff",
+    "folder": "item/",
+    "headString": "F"
+  },
+  {
+    "fName": "live",
+    "folder": "obj/",
+    "headString": "L"
+  },
+  {
+    "fName": "floor",
+    "folder": "level/",
+    "headString": "LF"
+  },
+  {
+    "fName": "enemy",
+    "folder": "level/",
+    "headString": "E"
+  },
+  {
+    "fName": "npc",
+    "folder": "level/",
+    "headString": "N"
+  },
+  {
+    "fName": "mapObj",
+    "folder": "obj/",
+    "headString": "MO"
+  },
+  {
+    "fName": "env",
+    "folder": "level/",
+    "headString": "LE"
+  },
+  {
+    "fName": "fight",
+    "folder": "level/",
+    "headString": "LFI"
+  },
+  {
+    "fName": "thing",
+    "folder": "level/",
+    "headString": "LT"
+  },
+  {
+    "fName": "tag",
+    "folder": "tag/",
+    "headString": "TT"
+  },
+  {
+    "fName": "build",
+    "folder": "item/",
+    "headString": "GB"
+  }
+]

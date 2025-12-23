@@ -1,0 +1,519 @@
+[
+  {
+    "id": 0,
+    "rawname": "Null",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "null"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "empty"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Test",
+    "name": "测试",
+    "description": "内容不定，测试用卡牌",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "shot"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "Obj",
+    "name": "物体",
+    "description": "这是个物体，可以发送碰撞消息\n团队:{team}",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "Cube"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Control",
+    "name": "控制",
+    "description": "可以响应控制，发送控制信息\nWADS发送移动控制信息、空格发送跳跃信息",
+    "configs": null
+  },
+  {
+    "id": 4,
+    "rawname": "health",
+    "name": "生命",
+    "description": "当前生命值：{healthCur} / {healthMax}\n攻击速度：{atkSpeed}\n生命降低至0以下后准备死亡",
+    "configs": [
+      {
+        "$type": "Dhealth_4, Assembly-CSharp",
+        "healthBarUIName": "healthBarUI",
+        "healthBarName": "healthBar",
+        "liveUpName": "LiveCanvas",
+        "textObjName": "textObj",
+        "textUIName": "textUI",
+        "errorTextName": "errorText"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "coldam",
+    "name": "碰撞伤害(对敌)",
+    "description": "对碰撞敌方造成 {damage} 伤害",
+    "configs": null
+  },
+  {
+    "id": 6,
+    "rawname": "coldes",
+    "name": "碰撞死亡",
+    "description": "碰撞时真实死亡",
+    "configs": null
+  },
+  {
+    "id": 7,
+    "rawname": "timedes",
+    "name": "时间死亡",
+    "description": "时间到后真实死亡，剩余时间{timeRes}秒",
+    "configs": null
+  },
+  {
+    "id": 8,
+    "rawname": "player",
+    "name": "玩家(测试)",
+    "description": "这是玩家，测试版",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "hutao"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "health": 10.0,
+        "atk": 1.0,
+        "speed": 5.0,
+        "dieAnimation": "die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 10.0,
+        "magicIds": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rawname": "camera",
+    "name": "摄像头",
+    "description": "这张卡的根卡将加上摄像机，显示第一/三人称视角，并且可以发送转动信息\n摄像头优先级：{priority}",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "camera"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rawname": "bullet",
+    "name": "子弹",
+    "description": "一个撞到人会消失并且造成伤害的物体",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 1,
+        "bulletTime": 2.0,
+        "bulletSpeed": 10.0,
+        "move": "move2",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rawname": "jump",
+    "name": "跳跃",
+    "description": "可以接受跳跃信息给予物体向上的力",
+    "configs": null
+  },
+  {
+    "id": 12,
+    "rawname": "cd",
+    "name": "冷却",
+    "description": "空",
+    "configs": null
+  },
+  {
+    "id": 13,
+    "rawname": "des",
+    "name": "无效",
+    "description": "这张卡无效",
+    "configs": null
+  },
+  {
+    "id": 14,
+    "rawname": "magic",
+    "name": "魔法槽",
+    "description": "能够装备一些魔法，接受控制信息释放装备着的魔法\n上限：{holdMax}",
+    "configs": [
+      {
+        "$type": "Dmagic_14, Assembly-CSharp",
+        "magicPanelName": "magicPanel",
+        "magicKeyName": "magicKey",
+        "magicBarName": "magicBarUI",
+        "useBarName": "useBar"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rawname": "magiccon",
+    "name": "第三人称魔法控制",
+    "description": "根据键盘操作发送魔法释放消息，以鼠标位置为施法位置",
+    "configs": null
+  },
+  {
+    "id": 16,
+    "rawname": "shot",
+    "name": "发射(Test)",
+    "description": "[主动]\n发射火焰子弹",
+    "configs": [
+      {
+        "$type": "Dmagic, Assembly-CSharp",
+        "cd": 1.0,
+        "cost": 1.0,
+        "windUp": 0.8,
+        "windDown": -1.0,
+        "moveUse": false,
+        "animName": "use"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "rawname": "magicbase",
+    "name": "魔法基础",
+    "description": "基础的魔法(技能)单位",
+    "configs": null
+  },
+  {
+    "id": 18,
+    "rawname": "hk",
+    "name": "挥砍一式",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "Dmagic, Assembly-CSharp",
+        "cd": 1.0,
+        "cost": 0.0,
+        "windUp": 0.0,
+        "windDown": -1.0,
+        "moveUse": false,
+        "animName": "use"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "rawname": "live",
+    "name": "生命基础",
+    "description": "基本的生命单位，包含生命、速度、魔法",
+    "configs": null
+  },
+  {
+    "id": 20,
+    "rawname": "hk2",
+    "name": "挥砍二式",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "Dmagic, Assembly-CSharp",
+        "cd": 1.0,
+        "cost": 0.0,
+        "windUp": 0.0,
+        "windDown": -1.0,
+        "moveUse": false,
+        "animName": "use"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "rawname": "dld",
+    "name": "多段魔法切换",
+    "description": "后摇结束后，切换魔法至下一个，连击最大间隔：{ljTimeMax}",
+    "configs": null
+  },
+  {
+    "id": 22,
+    "rawname": "hkAll",
+    "name": "挥砍",
+    "description": "拥有多段挥砍的内容",
+    "configs": [
+      {
+        "$type": "Dmagic, Assembly-CSharp",
+        "cd": 1.0,
+        "cost": 0.0,
+        "windUp": 0.0,
+        "windDown": -1.0,
+        "moveUse": false,
+        "animName": "use"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "rawname": "sword",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "sword"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "rawname": "hk3",
+    "name": "挥砍三式",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "Dmagic, Assembly-CSharp",
+        "cd": 1.0,
+        "cost": 0.0,
+        "windUp": 0.0,
+        "windDown": -1.0,
+        "moveUse": false,
+        "animName": "use"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "rawname": "showcard",
+    "name": "展示卡牌",
+    "description": "展示根卡的卡牌树",
+    "configs": null
+  },
+  {
+    "id": 26,
+    "rawname": "ysw",
+    "name": "衍生物标记",
+    "description": "被 {from} 衍生",
+    "configs": null
+  },
+  {
+    "id": 27,
+    "rawname": "diedes",
+    "name": "死亡消毁",
+    "description": "真正死亡后销毁根卡\n\n人被杀，就会死",
+    "configs": [
+      {
+        "$type": "Ddiedes_27, Assembly-CSharp",
+        "diePar": "die"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "rawname": "godie",
+    "name": "死掉",
+    "description": "准备死亡通过后，进入死亡动作，然后触发真正死亡",
+    "configs": null
+  },
+  {
+    "id": 29,
+    "rawname": "Ebase",
+    "name": "怪物基础",
+    "description": "方便地配置成自主行动的怪物",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "enemy"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "health": 10.0,
+        "atk": 1.0,
+        "speed": 2.0,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 50.0,
+        "magicIds": []
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "rawname": "brain",
+    "name": "智慧",
+    "description": "这个卡没什么实质内容，子卡可以放些操控类的内容",
+    "configs": null
+  },
+  {
+    "id": 31,
+    "rawname": "EBmove",
+    "name": "怪物移动控制",
+    "description": "寻找最近的敌人，向其移动\n寻敌距离上限：{maxFindDis}",
+    "configs": null
+  },
+  {
+    "id": 32,
+    "rawname": "EBmagic",
+    "name": "怪物魔法控制",
+    "description": "自动释放冷却已好的魔法",
+    "configs": null
+  },
+  {
+    "id": 33,
+    "rawname": "item",
+    "name": "物品",
+    "description": "威力倍数:{pow}",
+    "configs": null
+  },
+  {
+    "id": 34,
+    "rawname": "quickdie",
+    "name": "快速死亡",
+    "description": "接受到准备死亡信息后立刻发送真实死亡信息",
+    "configs": []
+  },
+  {
+    "id": 35,
+    "rawname": "buff",
+    "name": "buff槽",
+    "description": "能够接受bebuff消息，为效果计时与产生效果",
+    "configs": []
+  },
+  {
+    "id": 36,
+    "rawname": "buffbase",
+    "name": "buff基础",
+    "description": "存储了buff的信息，可以继承此作为buff",
+    "configs": []
+  },
+  {
+    "id": 37,
+    "rawname": "ShoulderCamera",
+    "name": "过肩摄像机",
+    "description": "过肩视角的实现",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "camera"
+      },
+      {
+        "$type": "DShoulderCamera_37, Assembly-CSharp",
+        "centerUI": "centerUI"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "rawname": "qhc",
+    "name": "强化槽",
+    "description": "附着于魔法上，承载着强化石，不负责装备等信息的处理",
+    "configs": []
+  },
+  {
+    "id": 39,
+    "rawname": "colheal",
+    "name": "碰撞治疗(对友)",
+    "description": "空",
+    "configs": []
+  },
+  {
+    "id": 40,
+    "rawname": "bag",
+    "name": "背包",
+    "description": "这是一个能承载一些东西的背包",
+    "configs": [
+      {
+        "$type": "Dbag_40, Assembly-CSharp",
+        "bagUIName": "bagUI",
+        "goodUIName": "goodUI",
+        "bagGoodUIName": "bagGoodUI",
+        "goodPreSeeName": "good_presee",
+        "preSeeGoodUIName": "preSeeGoodUI",
+        "dragHint": "dragHint"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "rawname": "time",
+    "name": "时间控制",
+    "description": "控制了一些时间相关的事情",
+    "configs": []
+  },
+  {
+    "id": 42,
+    "rawname": "showui",
+    "name": "展示UI",
+    "description": "持有此卡，整棵卡树展示其UI",
+    "configs": []
+  },
+  {
+    "id": 43,
+    "rawname": "colAddBuff",
+    "name": "碰撞给予效果",
+    "description": "碰撞命中后，给予目标效果",
+    "configs": []
+  },
+  {
+    "id": 44,
+    "rawname": "chargeTime",
+    "name": "蓄力计时",
+    "description": "空",
+    "configs": []
+  },
+  {
+    "id": 45,
+    "rawname": "Cmap",
+    "name": "地图",
+    "description": "揭示未来的道路走向",
+    "configs": [
+      {
+        "$type": "DCmap_45, Assembly-CSharp",
+        "floorTypeWeightData":
+        {
+          "thing":2,
+          "forge":1,
+          "tresureMagic":1,
+          "treasureGood":1,
+          "wzd":1,
+          "shop":1
+        },
+        "mapUI": "mapUI",
+        "mapGoodUI": "mapGoodUI",
+        "highLightUI": "highLightUI",
+        "linkLineUI": "linkLineUI"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          
+        ]
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "id": 0,
+    "rawname": "GRnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DFilterTag, Assembly-CSharp",
+        "tag": "Rnull"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature" : false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Prule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "GRbase",
+    "name": "规则基础",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Prule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "GRyy",
+    "name": "阴与阳",
+    "description": " *阳能无中生有，产生道路\n *阴能有中生无，打破阻碍\n *阴与阳加入基础掉落",
+    "configs": [
+      {
+        "$type": "DGRyy_2, Assembly-CSharp",
+        "leftUpUI": "yyShow"
+      },
+      {
+        "$type": "DFilterTag, Assembly-CSharp",
+        "tag": "Ryy"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Prule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "GRcountedItem",
+    "name": "可数物品",
+    "description": "可以计数的物品的基础，包含一系列方便的操作的包装",
+    "configs": []
+  },
+  {
+    "id": 4,
+    "rawname": "GRwx",
+    "name": "五行",
+    "description": "技能拥有五行属性，伤害也区分开五行",
+    "configs": [
+      {
+        "$type": "DGRwx_4, Assembly-CSharp",
+        "wxStrs":[
+          "null","jin","shui","mu","huo","tu"
+        ],
+        "lightColorStrs":[
+          "#C3C3C3",
+          "#FFFF00",
+          "#00C9FF",
+          "#03D900",
+          "#FF0000",
+          "#8E4D00"
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Prule"
+        ]
+      }
+    ]
+  }
+
+
+
+
+
+
+]

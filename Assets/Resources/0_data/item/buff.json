@@ -1,0 +1,354 @@
+[
+  {
+    "id": 0,
+    "rawname": "Fnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "ontx",
+        "isPar": false
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Fzs",
+    "name": "灼烧",
+    "description": "每{interval}s对自身造成伤害\n *叠加取最高威力并重置持续时间",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "Fzs",
+        "isPar": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "Fksyd",
+    "name": "加速",
+    "description": "移动速度提升[speedUp,%]",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "ksydBuff",
+        "isPar": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Fghost",
+    "name": "幽灵形态",
+    "description": "只是一个酷酷的幽灵外扩特效，没有实际效果",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "ghost"
+      },
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "ghost",
+        "isPar": true
+      },
+      {
+        "$type": "DFghost_3, Assembly-CSharp",
+        "materialName": "FresnelGlowTransparent"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "FmustMove",
+    "name": "位移",
+    "description": "移动",
+    "configs": [
+      {
+        "$type": "DTgood, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "Fcyxx",
+    "name": "残影显现",
+    "description": "每隔{interval}s显示当前的残影",
+    "configs": [
+      {
+        "$type": "DFcyxx_5, Assembly-CSharp",
+        "matName": "cy",
+        "interval": 0.03,
+        "cyTime": 0.3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "Fcold",
+    "name": "寒冷",
+    "description": "每层会使得移动速度减少{speedDown,%}\n当前层数：{pow}",
+    "configs": [
+      {
+        "$type": "DFcold_6, Assembly-CSharp",
+        "speedDown": 0.05,
+        "coldMax": 10,
+        "coldBarName": "coldBar"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rawname": "Fsh",
+    "name": "失衡",
+    "description": "无法控制移动",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rawname": "Fyqzf",
+    "name": "勇气祝福",
+    "description": "[atkAdd,atk]",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "yqzf_par",
+        "isPar": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rawname": "Fhd",
+    "name": "护盾",
+    "description": "抵挡{armor}伤害",
+    "configs": [
+      {
+        "$type": "DFhd_9, Assembly-CSharp",
+        "armorBarName": "ArmorBar"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rawname": "FattChange",
+    "name": "属性变化",
+    "description": "[attAndRevise]",
+    "configs": [
+      
+    ]
+  },
+  {
+    "id": 11,
+    "rawname": "Fyx",
+    "name": "晕眩",
+    "description": "无法主动施法，无法移动或者转向",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "yx"
+      },
+      {
+        "$type": "DFyx_11, Assembly-CSharp",
+        "buffBarName": "StunBar"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rawname": "Fwfsf",
+    "name": "无法施法",
+    "description": "无法主动施法\n这个作为基本的组件被其他buff使用",
+    "configs": [
+      {
+        "$type": "DFwfsf_12, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rawname": "Fqx",
+    "name": "群星-增加数量",
+    "description": "增加群星发射星星的数量，持续至战斗结束",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rawname": "Fcm",
+    "name": "沉默",
+    "description": "无法主动施法",
+    "configs": [
+      {
+        "$type": "DFcm_14, Assembly-CSharp",
+        "buffBarName": "BuffBar"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rawname": "Fwfyd",
+    "name": "无法移动",
+    "description": "{speedAdd,speed}\n无法转向\n这个作为基本的组件被其他buff使用",
+    "configs": [
+      {
+        "$type": "DFwfyd_15, Assembly-CSharp",
+        "speedAdd": {
+          "DirectMul": -100
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "rawname": "Fwfsj",
+    "name": "无法受击",
+    "description": "受到的攻击无效，无法触发任何受击效果",
+    "configs": []
+  },
+  {
+    "id": 17,
+    "rawname": "Fwfzd",
+    "name": "无法阻挡",
+    "description": "不会被常规的障碍物或者敌人阻挡，会穿过去",
+    "configs": []
+  },
+  {
+    "id": 18,
+    "rawname": "Fyzzbj",
+    "name": "一字斩标记",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "yzzbj"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "rawname": "FdamType",
+    "name": "伤害属性附加-魔法物体",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "rawname": "Fjdyz",
+    "name": "坚定意志已生效",
+    "description": "{card,*good*51}已经在这个单位上生效过了，不会再触发效果",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "rawname": "Fjlp",
+    "name": "惊雷破-魔法物体",
+    "description": "额外雷击",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "rawname": "Fxl",
+    "name": "星落",
+    "description": "加速下落，接触物体后在落点产生魔法物体",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "ontx",
+        "isPar": true
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "rawname": "Ffyjs",
+    "name": "防御架势",
+    "description": "防御",
+    "configs": [
+      {
+        "$type": "DFfyjs_23, Assembly-CSharp",
+        "matName": "fyjs"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "rawname": "FCmat",
+    "name": "材质变换-组件",
+    "description": "作为buff的组件，展现材质的变换",
+    "configs": []
+  },
+  {
+    "id": 25,
+    "rawname": "Flyxg",
+    "name": "领域效果-魔法物体",
+    "description": "领域效果的基础，帮忙实现了存有物体的托管",
+    "configs": []
+  },
+  {
+    "id": 26,
+    "rawname": "Ffsly",
+    "name": "繁盛领域-魔法物体",
+    "description": "加攻回血的领域",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "rawname": "Fyl",
+    "name": "涌流",
+    "description": "释放威力增加{pow}",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "ontx",
+        "isPar": true
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "rawname": "Ftywy",
+    "name": "通用位移特效",
+    "description": "很方便的通用的位移特效！",
+    "configs": [
+      {
+        "$type": "DonTx, Assembly-CSharp",
+        "onTxName": "ontx",
+        "isPar": true
+      }
+    ]
+  }
+
+
+
+
+
+
+]

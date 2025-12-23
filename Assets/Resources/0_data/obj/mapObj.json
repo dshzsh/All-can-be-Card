@@ -1,0 +1,114 @@
+[
+  {
+    "id": 0,
+    "rawname": "MOnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "null"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "MOcsm",
+    "name": "地区传送门",
+    "description": "联通不同地区的门",
+    "configs": [
+      {
+        "$type": "DMOcsm_1, Assembly-CSharp",
+        "openTime": 1
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "portal"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "MOcjcsm",
+    "name": "大环境传送门",
+    "description": "联通不同大环境的传送门",
+    "configs": [
+      {
+        "$type": "DMOcjcsm_2, Assembly-CSharp",
+        "openTime": 1
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "envPortal"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "MOcoin",
+    "name": "金币",
+    "description": "触碰后获得{cnt}金币",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "coin"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "MOitemObj",
+    "name": "掉落物",
+    "description": "物体的掉落物。内部物体：{card,+}",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "itemObj"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "MOdzt",
+    "name": "锻造台",
+    "description": "交互后可以锻造技能",
+    "configs": [
+      {
+        "$type": "DMOdzt_5, Assembly-CSharp",
+        "forgeUI": "forgeUI",
+        "powAdd": 0.2,
+        "qhcAdd": 1
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "SM_Prop_Workbench_Forge_01_Preset"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "MOwarnCsm",
+    "name": "警示传送门",
+    "description": "有敌人生成在这里了",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "warnCsm"
+      }
+    ]
+  }
+
+
+]

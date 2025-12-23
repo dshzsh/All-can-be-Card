@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "rawname": "Nnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "null"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Ntreasure",
+    "name": "宝箱",
+    "description": "里面有道具！\n生成时会根据{card,*att*13}提高宝箱内容品质",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "SM_Prop_Chest_04"
+      },
+      {
+        "$type": "DNtreasure_1, Assembly-CSharp",
+        "treasurePanel": "TreasurePanel",
+        "treasurePanelItem": "TreasurePanelItem"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "NmagicTreasure",
+    "name": "魔法宝箱",
+    "description": "里面有技能！\n生成时会根据{card,*att*13}提高宝箱内容品质",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "SM_Prop_Chest_01"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Nshop",
+    "name": "商店位",
+    "description": "可以耗费金币购买道具",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "shop"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "npc"
+        ]
+      }
+    ]
+  }
+
+
+
+  
+]

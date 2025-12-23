@@ -1,0 +1,43 @@
+[
+  {
+    "id": 0,
+    "rawname": "TTnulll",
+    "name": "空",
+    "description": "空",
+    "configs": null
+  },
+  {
+    "id": 1,
+    "rawname": "TTcrit",
+    "name": "攻击暴击",
+    "description": "标志着这个伤害产生了暴击",
+    "configs": null
+  },
+  {
+    "id": 2,
+    "rawname": "TTdamType",
+    "name": "伤害属性",
+    "description": "标识伤害的五行属性",
+    "configs": null
+  },
+  {
+    "id": 3,
+    "rawname": "TTzssh",
+    "name": "真实伤害",
+    "description": "无视防御的伤害",
+    "configs": null
+  },
+  {
+    "id": 4,
+    "rawname": "TTql",
+    "name": "千雷复制",
+    "description": "这个魔法物体是被{card,*good*52}复制出来的，无法再触发其效果",
+    "configs": null
+  }
+
+
+
+
+
+
+]

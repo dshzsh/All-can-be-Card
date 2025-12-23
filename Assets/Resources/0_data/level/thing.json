@@ -1,0 +1,215 @@
+[
+  {
+    "id": 0,
+    "rawname": "LTnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "*thing*1*thingObj"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DthingText, Assembly-CSharp",
+        "meetDifficulty":[
+          -1
+        ],
+        "canMeet": false,
+        "title": "标题",
+        "texts": [
+          {
+            "content":"选择一项内容",
+            "choice": [
+              "选项〇",
+              "选项一",
+              "选项二"
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "thing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "LTthingbase",
+    "name": "事件基础",
+    "description": "事件水晶的基础",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "thingObj"
+      },
+      {
+        "$type": "DLFthing_10, Assembly-CSharp",
+        "thingPanel": "thingPanel"
+      },
+      {
+        "$type": "DthingText, Assembly-CSharp",
+        "meetDifficulty":[
+          -1
+        ],
+        "canMeet": false,
+        "title": "标题",
+        "texts": [
+          {
+            "content": "选择一项内容",
+            "choice": [
+              "选项〇",
+              "选项一",
+              "选项二"
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "thing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "LTtlzq",
+    "name": "贪婪之泉",
+    "description": "贪婪或是见好就收",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "*thing*1*thingObj"
+      },
+      {
+        "$type": "DLTtlzq_2, Assembly-CSharp",
+        "coin0": 20,
+        "coin1": 40,
+        "coin2": 30
+      },
+      {
+        "$type": "DthingText, Assembly-CSharp",
+        "meetDifficulty": [
+          -1
+        ],
+        "canMeet": true,
+        "title": "贪婪之泉",
+        "texts": [
+          {
+            "content": "你遇到了一个奇怪的泉水，冒着奇怪的热气\n\n冥冥之中你觉得可以向它祈祷来得到一些东西......\n\n诅咒：{card,*good*25}",
+            "choice": [
+              "祈祷：获得{coin0}金币",
+              "疯狂祈祷：获得{coin1}金币与{card,*good*25}",
+              "虔诚祈祷：失去{coin2}金币，失去所有持有的{card,*good*25}"
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "thing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "LTdjs",
+    "name": "点金手",
+    "description": "转换成金币",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "*thing*1*thingObj"
+      },
+      {
+        "$type": "DLTdjs_3, Assembly-CSharp",
+        "maxNum": 3,
+        "cost1": 20,
+        "coin2": 0.1
+      },
+      {
+        "$type": "DthingText, Assembly-CSharp",
+        "meetDifficulty": [
+          -1
+        ],
+        "canMeet": true,
+        "title": "点金手",
+        "texts": [
+          {
+            "content": "眼前是一个奇妙的转换器\n\n可以把物品丢进去转换成等价值的金币，或是把金币丢进去转换成道具\n\n似乎可以丢进去空气，但好像没什么用",
+            "choice": [
+              "丢进去物品：失去0~{maxNum}个物品，转换对应价值金币",
+              "丢进去金币：失去{cost1}金币，获得随机道具",
+              "丢进去空气：获取{coin2}金币"
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "thing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "LTkndsj",
+    "name": "可能的设计",
+    "description": "获得一个自定义的道具",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "*thing*1*thingObj"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DthingText, Assembly-CSharp",
+        "meetDifficulty": [
+          -1
+        ],
+        "canMeet": true,
+        "title": "可能的设计",
+        "texts": [
+          {
+            "content": "眼前是一个破损的仪器\n\n看上去可以用来创造奇怪的道具\n\n你希望它的触发条件是...",
+            "choice": [
+              "{cText0}",
+              "{cText1}",
+              "{cText2}"
+            ]
+          },
+          {
+            "content": "你希望它给予的属性是...",
+            "choice": [
+              "{aText0}",
+              "{aText1}",
+              "{aText2}"
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "thing"
+        ]
+      }
+    ]
+  }
+
+
+
+]

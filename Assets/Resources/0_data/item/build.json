@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "rawname": "GBnulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DGBbuildTag, Assembly-CSharp",
+        "tag": "GBnull"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature" : false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "build"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "GBbase",
+    "name": "流派基础",
+    "description": "作为流派的基础，r任意随机出的物品有{changeRate,%}的概率替换成本流派的内容",
+    "configs": [
+      {
+        "$type": "DGBbase_1, Assembly-CSharp",
+        "changeRate": 0.4
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "build"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "GBlt",
+    "name": "雷霆",
+    "description": "雷厉风行！用漫天的雷霆击碎敌人，灵活迅捷",
+    "configs": [
+      {
+        "$type": "DGBbuildTag, Assembly-CSharp",
+        "tag": "GBlt"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "build"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "GBzs",
+    "name": "灼烧",
+    "description": "给予敌人灼烧伤害，并能利用灼烧强化技能效果",
+    "configs": [
+      {
+        "$type": "DGBbuildTag, Assembly-CSharp",
+        "tag": "GBzs"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "build"
+        ]
+      }
+    ]
+  }
+
+
+
+
+
+]

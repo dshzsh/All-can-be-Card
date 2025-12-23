@@ -1,0 +1,1937 @@
+[
+  {
+    "id": 0,
+    "rawname": "Gnulll",
+    "name": "空",
+    "README": "{variableName,spOp},用方括号会受pow影响,加 - pow取倒数,加 % 以百分比显示内容",
+    "description": "本身变量为cardBase,spOp为+的时候显示小框,如果是容器默认可装配\nrare浮动+0%~+50%\nrare1:0.2\nrare2:0.3\nrare3:0.4\nrare4:0.6\nrare5:any\n等级为3的诅咒是中等诅咒，就是稍微难受一点，等级4是要打断一只手的程度，等级5就是拿到就剧毒",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "Atk",
+            "revise": {
+              "finalAdd": 0.0
+            }
+          }
+        ],
+        "attAndValueDatas": [
+          {
+            "att": "Atk",
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature" : false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Gtest",
+    "name": "测试物品",
+    "description": "测试用的物品，用处不定",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "crit",
+            "revise": {
+              "finalAdd": 1.0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "Gxd",
+    "name": "小刀",
+    "description": "\n\n一把普通的小刀",
+    "configs": [
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "Atk",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Grsxz",
+    "name": "燃烧心脏",
+    "description": "灼烧敌人后，恢复[heal,healthMax]生命值",
+    "configs": [
+      {
+        "$type": "DGrsxz_3, Assembly-CSharp",
+        "heal": 0.008
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal","GBzs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "Gsdzs",
+    "name": "深度灼烧",
+    "description": "灼烧敌人后，永久使其[defReduce,Def]",
+    "configs": [
+      {
+        "$type": "DGsdzs_4, Assembly-CSharp",
+        "defReduce": {
+          "value": -0.04
+        }
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "Atk",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal","GBzs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "Ggxrl",
+    "name": "高效燃料",
+    "description": "灼烧速度加快[speedUp,%]",
+    "configs": [
+      {
+        "$type": "DGgxrl_5, Assembly-CSharp",
+        "speedUp": 0.2
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "atkSpeed",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal","GBzs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "Grldf",
+    "name": "锐利刀锋",
+    "description": "\n\n一把很锐利的刀",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "crit",
+            "value": 0.1
+          },
+          {
+            "att": "critDam",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rawname": "Gxdp",
+    "name": "小盾牌",
+    "description": "\n\n一个小小的挂饰，能让人感觉被保护着",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "def",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rawname": "Gsyc",
+    "name": "四叶草",
+    "description": "\n\n拿在手里让人感觉很幸运",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "luck",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rawname": "Gsbdp",
+    "name": "闪避斗篷",
+    "description": "受到伤害时，有[useluck,missRate]概率将伤害变为0\n概率上限：{missMax,%}",
+    "configs": [
+      {
+        "$type": "DGsbdp_9, Assembly-CSharp",
+        "missRate": 0.3,
+        "missMax": 0.9
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rawname": "Ghb",
+    "name": "怀表",
+    "description": "\n\n看上去并不能看时间",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "cdSpeed",
+            "value": 0.3
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rawname": "Gjhfz",
+    "name": "均衡发展",
+    "description": "\n\n各种属性都能提供！",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.1
+          },
+          {
+            "att": "manaMax",
+            "value": 0.1
+          },
+          {
+            "att": "Atk",
+            "value": 0.1
+          },
+          {
+            "att": "def",
+            "value": 0.1
+          },
+          {
+            "att": "cdSpeed",
+            "value": 0.1
+          },
+          {
+            "att": "crit",
+            "value": 0.1
+          },
+          {
+            "att": "critDam",
+            "value": 0.1
+          },
+          {
+            "att": "luck",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rawname": "Ggdxz",
+    "name": "更多选择",
+    "description": "{card,*npc*1}额外多一个选项，有[useluck,baseRate]的概率再多一个选项",
+    "configs": [
+      {
+        "$type": "DGgdxz_12, Assembly-CSharp",
+        "baseRate": 0.3
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "luck",
+            "value": 0.05
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rawname": "Gzezr",
+    "name": "灾厄之刃",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "Atk",
+            "value": 0.6
+          },
+          {
+            "att": "luck",
+            "value": -0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal","unluck"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rawname": "Gmnkj",
+    "name": "魔能铠甲",
+    "description": "受到的[defRate,%]伤害改为消耗等量法力值",
+    "configs": [
+      {
+        "$type": "DGmnkj_14, Assembly-CSharp",
+        "defRate": 0.4
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "manaMax",
+            "value": 0.3
+          },
+          {
+            "att": "def",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rawname": "Gxjbs",
+    "name": "迅捷宝石",
+    "description": "施法后，立刻回转[cdPercent,%]冷却",
+    "configs": [
+      {
+        "$type": "DGxjbs_15, Assembly-CSharp",
+        "cdPercent": 0.1
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "cdSpeed",
+            "value": 0.1
+          },
+          {
+            "att": "manaMax",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "rawname": "Gkrq",
+    "name": "空容器",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "manaMax",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "rawname": "Gwjhz",
+    "name": "无尽盒子",
+    "description": "[交互]\n打开无尽的盒子！\n内部物品类别:{content}",
+    "configs": [
+      {
+        "$type": "DGwjhz_17, Assembly-CSharp",
+        "boxUIName": "boxUI"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 6,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal","test"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "rawname": "Gbjgms",
+    "name": "暴击共鸣石",
+    "description": "造成的伤害额外进行一次[critDamRate,critDam,%]的暴击判定",
+    "configs": [
+      {
+        "$type": "DGbjgms_18, Assembly-CSharp",
+        "critDamRate": 0.4
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "crit",
+            "value": 0.1
+          },
+          {
+            "att": "critDam",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "rawname": "Gsgzl",
+    "name": "闪光治疗",
+    "description": "治疗可以产生[critDamRate,critDam,%]的暴击",
+    "configs": [
+      {
+        "$type": "DGsgzl_19, Assembly-CSharp",
+        "critDamRate": 0.4
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.1
+          },
+          {
+            "att": "crit",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "rawname": "Gcjdd",
+    "name": "超级大刀",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "Atk",
+            "revise": {
+              "DirectMul": 0.1
+            }
+          }
+        ],
+        "attAndValueDatas": [
+          {
+            "att": "Atk",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "rawname": "Gjh",
+    "name": "激活",
+    "description": "释放冷却至少为{lestTime}s的技能后，获得{time}s的[atkSpeedAdd,atkspeed]",
+    "configs": [
+      {
+        "$type": "DGjh_21, Assembly-CSharp",
+        "atkSpeedAdd": {
+          "value": 0.2
+        },
+        "time": 2,
+        "lestTime": 1
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "atkSpeed",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "rawname": "Gfzq",
+    "name": "复制器",
+    "description": "[被动]\n放入一个待复制的物体\n当前物体：{item,++}\n *只能复制威力小于复制器的物体\n[交互]\n获得放入物体的{copyCnt}个完全相同的复制，消耗复制器",
+    "configs": [
+      {
+        "$type": "DGfzq_22, Assembly-CSharp",
+        "copyCnt": 2
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "rawname": "Gkb",
+    "name": "狂暴",
+    "description": "生命值越低，持有的攻击力越高，至多在损失{healthRate,%}生命值时持有[atkAddMax,atk]\n *当前效果：{atkAdd,atk}",
+    "configs": [
+      {
+        "$type": "DGkb_23, Assembly-CSharp",
+        "healthRate": 1,
+        "atkAddMax":{
+          "DirectMul": 0.4
+        }
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "rawname": "Gqb",
+    "name": "钱包",
+    "description": "嘟石：{coin}\n可以且仅可以装一大堆嘟石（很酷炫的金币）的奇妙口袋",
+    "configs": [
+      {
+        "$type": "DGqb_24, Assembly-CSharp",
+        "leftUpUI": "qbShowUI"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal","important"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "rawname": "Gch",
+    "name": "伤痕",
+    "description": "\n\n一个无法弥合的伤口",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": -0.3
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pcurse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "rawname": "Gbox",
+    "name": "盒子",
+    "description": "一个盒子的基础",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "rawname": "Gjbll",
+    "name": "金币力量",
+    "description": "每持有1金币，[attPerCoin]\n当前加成：{attAndRevise}",
+    "configs": [
+      {
+        "$type": "DGjbll_27, Assembly-CSharp",
+        "attPerCoinData":
+        {
+          "att": "atk",
+          "value": 0.006
+        }
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "luck",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "rawname": "Gltwj",
+    "name": "雷霆万钧",
+    "description": "每主动释放{useCnt}次技能，使下一次造成伤害对目标产生落雷，造成[damage,atk]伤害",
+    "configs": [
+      {
+        "$type": "DGltwj_28, Assembly-CSharp",
+        "damage": 0.4,
+        "useCnt": 3
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "cdSpeed",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal","GBlt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "rawname": "Gdnzz",
+    "name": "动能装置",
+    "description": " *基于当前速度减少受到伤害，至多在{speedMax}m/s时受伤减少[damageReduce,%]\n *受到伤害后获得{buffTime}s不可叠加的[speedUp]",
+    "configs": [
+      {
+        "$type": "DGdnzz_29, Assembly-CSharp",
+        "damageReduce": 0.3,
+        "speedMax": 20,
+        "buffTime": 1,
+        "speedUpData":
+        {
+          "att": "speed",
+          "value": 0.1
+        }
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "speed",
+            "value": 0.05
+          },
+          {
+            "att": "critDam",
+            "value": 0.05
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "rawname": "Gxpx",
+    "name": "小跑鞋",
+    "description": "\n\n一个拿着就能让人跑得快的跑鞋",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "speed",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "rawname": "Gtxtz",
+    "name": "弹性体质",
+    "description": "记录[recordRate,%]受到伤害，在{timeHeal}s内逐渐恢复",
+    "configs": [
+      {
+        "$type": "DGtxtz_31, Assembly-CSharp",
+        "recordRate": 0.3,
+        "timeHeal": 5,
+        "interval": 0.5
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.1
+          },
+          {
+            "att": "manaMax",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "rawname": "Gqyd",
+    "name": "青云丹",
+    "description": "魔法槽上限+1",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "HealthMax",
+            "revise": {
+              "DirectMul": 0.1
+            }
+          },
+          {
+            "att": "Atk",
+            "revise": {
+              "DirectMul": 0.1
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good","PbossGood"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "rawname": "Gfl",
+    "name": "乏力",
+    "description": "\n\n什么都不想干",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "Atk",
+            "revise": {
+              "DirectMul": -0.3
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pcurse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "rawname": "Gpj",
+    "name": "疲倦",
+    "description": "\n\n好累.好累..好累...",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "atkSpeed",
+            "value": -0.2
+          },
+          {
+            "att": "cdSpeed",
+            "value": -0.3
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pcurse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "rawname": "Gzz",
+    "name": "阻滞",
+    "description": "释放冷却至少为{lestCd}s的技能后，获得[stunTime]s{card,*buff*14}",
+    "configs": [
+      {
+        "$type": "DGzz_35, Assembly-CSharp",
+        "lestCd": 1,
+        "stunTime": 1
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pcurse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "rawname": "Gcjsfq",
+    "name": "超级施法器",
+    "description": "测试用，施法后回转100%冷却",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "manaMax",
+            "value": 10.0
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 6,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal","test"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "rawname": "Gjmz",
+    "name": "静默者",
+    "description": " *敌人产生时赋予其[buffTime]s{card,*buff*14}\n *对无法施法的敌人造成伤害提升[damAdd,%]",
+    "configs": [
+      {
+        "$type": "DGjmz_37, Assembly-CSharp",
+        "buffTime": 2,
+        "damAdd": 0.3
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "def",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "rawname": "Gzzd",
+    "name": "诅咒丹",
+    "description": "[被动]\n魔法槽上限+2\n[获取]\n受到诅咒{curse,+}",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "def",
+            "revise": {
+              "DirectMul": -0.1
+            }
+          },
+          {
+            "att": "Atk",
+            "revise": {
+              "DirectMul": 0.2
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "PbossGood"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "rawname": "Gyzyy",
+    "name": "愈战愈勇",
+    "description": "在战斗中，每1s获得\n[atkAdd]\n[defAdd]\n *战斗结束后重置",
+    "configs": [
+      {
+        "$type": "DGyzyy_39, Assembly-CSharp",
+        "atkAddData": {
+          "att": "atk",
+          "value": 0.01
+        },
+        "defAddData": {
+          "att": "def",
+          "value": 0.01
+        }
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "rawname": "GattItemBase",
+    "name": "属性物品",
+    "description": "[atts]",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "rawname": "Gbjdj",
+    "name": "暴击叠加",
+    "description": "造成的伤害若不暴击，获得[critAdd]\n暴击后加成重置",
+    "configs": [
+      {
+        "$type": "DGbjdj_41, Assembly-CSharp",
+        "critAddData": {
+          "att": "crit",
+          "value": 0.1
+        }
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "critDam",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "rawname": "Gdqd",
+    "name": "大钱袋",
+    "description": "[获取]\n获得[coin]金币",
+    "configs": [
+      {
+        "$type": "DGdqd_42, Assembly-CSharp",
+        "coin": 30
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "rawname": "Gyhq",
+    "name": "优惠券",
+    "description": "所有商店价格[costReduce,%]",
+    "configs": [
+      {
+        "$type": "DGyhq_43, Assembly-CSharp",
+        "costReduce": -0.4
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "luck",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "rawname": "Gkndsj",
+    "name": "可能的设计",
+    "description": "{Condition}，获得[Revise]{exDes}\n\n这个道具有非常多的变种",
+    "configs": [
+      {
+        "$type": "DGkndsj_44, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "rawname": "Gsp",
+    "name": "审判",
+    "description": "造成的伤害不会低于[minDamage,atk]",
+    "configs": [
+      {
+        "$type": "DGsp_45, Assembly-CSharp",
+        "minDamage": 0.3
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "crit",
+            "value": 0.1
+          },
+          {
+            "att": "critDam",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "rawname": "Gyg",
+    "name": "阳光",
+    "description": "每隔{interval}s，恢复这段时间内收到伤害的[healRate,%]生命值\n\n很温暖，很舒服",
+    "configs": [
+      {
+        "$type": "DGyg_46, Assembly-CSharp",
+        "interval": 5,
+        "healRate": 0.2
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "rawname": "Gbc",
+    "name": "背刺",
+    "description": "在敌人身后造成的伤害提升[damageUp,%]",
+    "configs": [
+      {
+        "$type": "DGbc_47, Assembly-CSharp",
+        "damageUp": 0.4
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "crit",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "rawname": "Gzm",
+    "name": "直面",
+    "description": "受到面前敌人的伤害减少[damagePer,%]",
+    "configs": [
+      {
+        "$type": "DGzm_48, Assembly-CSharp",
+        "damagePer": 0.2
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.1
+          },
+          {
+            "att": "def",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "rawname": "Gfyd",
+    "name": "风云丹",
+    "description": "魔法槽上限+1\n每隔[interval,-]s，恢复{recoverMana,manaMax}法力",
+    "configs": [
+      {
+        "$type": "DGfyd_49, Assembly-CSharp",
+        "interval": 10,
+        "recoverMana": 1
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "manaMax",
+            "revise": {
+              "DirectMul": 0.1
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "PbossGood"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "rawname": "Gby",
+    "name": "本源",
+    "description": "承载永久属性变化的内在本质\n同时也会记录一些永久性的变化",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 0,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "rawname": "Gjdyz",
+    "name": "坚定意志",
+    "description": "对敌人首次造成伤害后，附加[damage,healthMax]伤害，并永久提升{upRate,%}伤害量的最大生命值\n *已获得属性：{added,healthMax}",
+    "configs": [
+      {
+        "$type": "DGjdyz_51, Assembly-CSharp",
+        "damage": 0.05,
+        "upRate": 0.1
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "HealthMax",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "rawname": "Gql",
+    "name": "千雷",
+    "description": "魔法物体有[useluck,baseOdds]概率产生一个额外复制\n *如果魔法物体为落雷，则概率变为[useluck,ljBaseOdds]\n *产生的复制不会触发此效果\n\n产生的复制的魔法物体再衍生的魔法物体也能被复制",
+    "configs": [
+      {
+        "$type": "DGql_52, Assembly-CSharp",
+        "baseOdds": 0.1,
+        "ljBaseOdds": 0.3,
+        "delay": 0.1
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "manaMax",
+            "value": 0.1
+          },
+          {
+            "att": "crit",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal","GBlt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "rawname": "Gyyj",
+    "name": "预言家",
+    "description": "\n\n第一把玩狼跳预言家，结果预言家是教授，我警徽没竞争过直接被早早的出掉了\n第二把被发到了预言家，查杀到了教授，结果教授对跳，没人信我，教授拿到了警徽，我被作为黑狼王折磨致死\n第三把又被发到了预言家！！！完全没人相信我，又被狼拿到了警徽，狼发言漏洞百出结果仍然我被票飞\n再也不玩预言家这**职业了，一把有三个强神，就预言家是弱神\n    ---2025/12/4 团建有感",
+    "configs": [
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndReviseDatas": [
+          {
+            "att": "luck",
+            "revise": {
+              "value": -100000000.0
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pcurse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "rawname": "Gblyb",
+    "name": "悖论硬币",
+    "description": "所有涉及幸运的概率变为不受幸运影响的固定概率{odds,%}\n\n一件事情要么成功，要么失败......",
+    "configs": [
+      {
+        "$type": "DGblyb_54, Assembly-CSharp",
+        "odds": 0.5
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "critDam",
+            "value": 0.1
+          },
+          {
+            "att": "luck",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "rawname": "Gbyld",
+    "name": "悲涌泪滴",
+    "description": "无法施法时，拥有[att1]，[att2]",
+    "configs": [
+      {
+        "$type": "DGbyld_55, Assembly-CSharp",
+        "att1Data": {
+          "att": "cdSpeed",
+          "revise": {
+            "finalMul": 2
+          }
+        },
+        "att2Data": {
+          "att": "def",
+          "revise": {
+            "finalMul": 2
+          }
+        }
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "manaMax",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 3,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "rawname": "Gylx",
+    "name": "幽兰香",
+    "description": "由你施加的所有效果持续时间延长[exTime,%]\n\n有些奇怪的效果也是通过buff实现的，可能会有奇怪的结果",
+    "configs": [
+      {
+        "$type": "DGylx_56, Assembly-CSharp",
+        "exTime": 0.4
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "Atk",
+            "value": 0.1
+          },
+          {
+            "att": "manaMax",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 4,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "rawname": "Gdhs",
+    "name": "打火石",
+    "description": "造成伤害后，赋予{card,*buff*1}，造成{fireTime}s * [fireDamage,Atk]/s伤害\n *这个效果有{interval}s冷却：{time}s/{interval}s",
+    "configs": [
+      {
+        "$type": "DGdhs_57, Assembly-CSharp",
+        "fireTime": 6,
+        "fireDamage": 0.2,
+        "interval": 5
+      },
+      {
+        "$type": "DbasicAtt, Assembly-CSharp",
+        "attAndValueDatas": [
+          {
+            "att": "Atk",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 2,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "good",
+          "Pnormal",
+          "GBzs"
+        ]
+      }
+    ]
+  }
+
+
+
+
+
+]

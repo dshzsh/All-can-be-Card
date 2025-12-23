@@ -1,0 +1,825 @@
+[
+  {
+    "id": 0,
+    "rawname": "Bnulll",
+    "name": "空",
+    "description": "0不销毁：近战，1碰到任何东西都销毁，2碰到敌人才销毁：穿墙子弹\n素材导入要求：缩放模式改为层次(H)，消耗后动作为Destroy，不循环\nlayer为bullet为不阻挡远程子弹\n球体碰撞半径必须设为0.5，靠子弹大小变化来作变化",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 1,
+        "bulletTime": 1.0,
+        "bulletSpeed": 10.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Bmfhd",
+    "name": "魔法护盾",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "mfhd"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 5.0,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "Blj",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "lj"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Bhk",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "slash"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": null,
+        "start": "FX_SwordSlash_01",
+        "hit": "FX_SwordSlash_Hit_01"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "Byh",
+    "name": "烟花轨迹",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "yh"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 1,
+        "bulletTime": 0.8,
+        "bulletSpeed": 25.0,
+        "move": "FX_Fireworks_Trail_01",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "ByhExplosion",
+    "name": "烟花爆炸",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "yhExplosion"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.5,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "FX_Fireworks_Explode_01",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "Bzys",
+    "name": "治愈波",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "Capsule"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "FX_Heal_01",
+        "hit": "FX_Heal_Symbol_02"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rawname": "Bssfd",
+    "name": "散弹",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "Bssfd"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 1,
+        "bulletTime": 0.5,
+        "bulletSpeed": 20.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rawname": "Bjg",
+    "name": "激光子弹",
+    "description": "激光的子弹，听上去有点奇怪？",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 100.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rawname": "Bzc",
+    "name": "重锤范围",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "zc"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "FX_Explosion_Large_Dark_01",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rawname": "Bzlb",
+    "name": "重力鞭抓取",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "zlb"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 1,
+        "bulletTime": 0.4,
+        "bulletSpeed": 15.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rawname": "BzlbThrow",
+    "name": "重力鞭丢",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "zlb2"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.5,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rawname": "Bbcj",
+    "name": "冰刺",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bcj"
+      },
+      {
+        "$type": "DBbcj_12, Assembly-CSharp",
+        "dieObjName": "end"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 2.0,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rawname": "Bphq",
+    "name": "喷火器火焰",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DBphq_13, Assembly-CSharp",
+        "bigRate": 3,
+        "speedUpRate": 1.5,
+        "maxBigTime": 0.8,
+        "maxSpeedUpTime": 1
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 1.0,
+        "bulletSpeed": 2.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rawname": "Bnzlc",
+    "name": "凝滞力场",
+    "description": "减速的力场",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 10.0,
+        "bulletSpeed": 0.0,
+        "move": "nzlcMove",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rawname": "Bxj",
+    "name": "迅击",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "sword"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "trail",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "rawname": "Btcj",
+    "name": "土刺",
+    "description": "晕眩击中的目标",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "tcj"
+      },
+      {
+        "$type": "DBtcj_16, Assembly-CSharp",
+        "dieObjName": "end"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 2.0,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "rawname": "Bgun",
+    "name": "枪子弹",
+    "description": "枪的子弹",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 2,
+        "bulletTime": 0.4,
+        "bulletSpeed": 50.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "rawname": "Bmc",
+    "name": "抹除",
+    "description": "沉默命中的目标",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 2.0,
+        "bulletSpeed": 3.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "rawname": "Bjs",
+    "name": "溅射",
+    "description": "",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "rawname": "BdirectAtk",
+    "name": "直接攻击",
+    "description": "给予一个生命直接的伤害用的中间魔法物体",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.1,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "rawname": "Bqx",
+    "name": "群星",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 2,
+        "bulletTime": 2.0,
+        "bulletSpeed": 7.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "rawname": "Bqrz",
+    "name": "千仞斩",
+    "description": "斩击剑气",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 50.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "rawname": "Bbpd",
+    "name": "爆破弹",
+    "description": "一种炸弹",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 2.0,
+        "bulletSpeed": 10.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "rawname": "Bbz",
+    "name": "爆炸",
+    "description": "一种爆炸波",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "rawname": "Bcz",
+    "name": "锤子",
+    "description": "碰撞其实只是一根",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "cz"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 1.0,
+        "bulletSpeed": 0.0,
+        "move": "trail",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "rawname": "Bzft",
+    "name": "正方体",
+    "description": "很标准的正方体碰撞，很适合作冲撞的碰撞伤害效果",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 1.0,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "rawname": "Byzz",
+    "name": "一字斩",
+    "description": "和正方体一样",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 1.0,
+        "bulletSpeed": 0.0,
+        "move": "trail",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "rawname": "Bgj",
+    "name": "弓箭",
+    "description": "受重力影响的子弹",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 1,
+        "bulletTime": 2,
+        "bulletSpeed": 6.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "rawname": "Bsmzx",
+    "name": "生命之息",
+    "description": "穿透追踪的子弹",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 2,
+        "bulletTime": 4.0,
+        "bulletSpeed": 10.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "rawname": "Bhz",
+    "name": "横斩",
+    "description": "横着的有轨迹的斩击用",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "DGnulll_0, Assembly-CSharp"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 20.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "rawname": "Bxl",
+    "name": "崩坠",
+    "description": "落地爆发的特效",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "rawname": "Bfsly",
+    "name": "繁盛领域",
+    "description": "领域",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.0,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "rawname": "Bzrsq",
+    "name": "灼热身躯",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "rawname": "Bfr",
+    "name": "焚刃",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 0.2,
+        "bulletSpeed": 0.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "rawname": "Bcy",
+    "name": "残影",
+    "description": "用作子弹的残影",
+    "configs": [
+      {
+        "$type": "DBcy_35, Assembly-CSharp",
+        "materialName": "cy"
+      },
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "bullet"
+      },
+      {
+        "$type": "Dbullet_10, Assembly-CSharp",
+        "bulletCol": 0,
+        "bulletTime": 2.0,
+        "bulletSpeed": 7.0,
+        "move": "move",
+        "start": "start",
+        "hit": "hit"
+      }
+    ]
+  }
+
+
+
+
+
+
+]

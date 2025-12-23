@@ -1,0 +1,344 @@
+[
+  {
+    "id": 0,
+    "rawname": "Enulll",
+    "name": "空",
+    "description": "空",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": null
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1,
+        "health": 5.0,
+        "atk": 1.0,
+        "speed": 2.0,
+        "atkSpeed": 0.3,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 10.0,
+        "magicIds": [
+          {
+            "id": 7,
+            "cd": 2,
+            "cost": 0,
+            "pow": 1
+          }
+        ]
+      },
+      {
+        "$type": "DenemyMoveBrain, Assembly-CSharp",
+        "mbMinDis": 1.2,
+        "mbMaxDis": 2.0
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "enemy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "rawname": "Ezft",
+    "name": "正方体",
+    "description": "会用近战攻击！",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "cube"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.5,
+        "health": 5,
+        "atk": 1,
+        "speed": 3.0,
+        "atkSpeed": 0.3,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 10.0,
+        "magicIds": [
+          {
+            "id": 7,
+            "cd": 2.0,
+            "cost": 0.0,
+            "pow": 1.0
+          }
+        ]
+      },
+      {
+        "$type": "DenemyMoveBrain, Assembly-CSharp",
+        "mbMinDis": 1.2,
+        "mbMaxDis": 2.0,
+        "atkDis": 2
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "enemy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rawname": "Ebmos",
+    "name": "远程mos",
+    "description": "会发射远程子弹！",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "cube"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.2,
+        "health": 3,
+        "atk": 1,
+        "speed": 2.0,
+        "atkSpeed": 0.3,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 10.0,
+        "magicIds": [
+          {
+            "id": 1,
+            "cd": 3.0,
+            "cost": 0.0,
+            "pow": 1.0
+          }
+        ]
+      },
+      {
+        "$type": "DenemyMoveBrain, Assembly-CSharp",
+        "mbMinDis": 6,
+        "mbMaxDis": 8
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "enemy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rawname": "Esdmos",
+    "name": "散弹mos",
+    "description": "会发射远程散弹！",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "cube"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.1,
+        "health": 3,
+        "atk": 1,
+        "speed": 2.0,
+        "atkSpeed": 0.3,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 10.0,
+        "magicIds": [
+          {
+            "id": 1,
+            "cd": 5.0,
+            "cost": 0.0,
+            "pow": 1.0,
+            "qhstones": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "DenemyMoveBrain, Assembly-CSharp",
+        "mbMinDis": 3,
+        "mbMaxDis": 5,
+        "atkDis": 7
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": true
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "enemy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rawname": "Exljr",
+    "name": "训练假人",
+    "description": "不会动，不会攻击",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "xljr"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.6,
+        "health": 10.0,
+        "atk": 0.0,
+        "speed": 0.0,
+        "atkSpeed": 0.3,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 10.0,
+        "magicIds": [
+          {
+            "id": 39
+          }
+        ]
+      },
+      {
+        "$type": "DenemyMoveBrain, Assembly-CSharp",
+        "mbMinDis": 0,
+        "mbMaxDis": 1
+      },
+      {
+        "$type": "Ditem, Assembly-CSharp",
+        "rare": 1,
+        "canGetFromTreature": false
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "enemy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rawname": "Ecmbj",
+    "name": "草木兵-近",
+    "description": "近距离挥砍攻击",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "cube"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.5,
+        "health": 0.0,
+        "atk": 0.0,
+        "speed": 3.0,
+        "atkSpeed": 0.3,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 0.0,
+        "magicIds": [
+          {
+            "id": 7,
+            "cd": 2.0,
+            "cost": 0.0,
+            "pow": 1.0,
+            "qhstones": []
+          }
+        ]
+      },
+      {
+        "$type": "DenemyMoveBrain, Assembly-CSharp",
+        "mbMinDis": 1.2,
+        "mbMaxDis": 2.0,
+        "atkDis": 2
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "enemy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rawname": "Ecmby",
+    "name": "草木兵-远",
+    "description": "远距离射击",
+    "configs": [
+      {
+        "$type": "DObj_2, Assembly-CSharp",
+        "obj": "cube"
+      },
+      {
+        "$type": "Dlive_19, Assembly-CSharp",
+        "height": 1.2,
+        "health": 0.0,
+        "atk": 0.0,
+        "speed": 2.5,
+        "atkSpeed": 0.3,
+        "dieAnimation": "*card*28*die"
+      },
+      {
+        "$type": "Dmymagic, Assembly-CSharp",
+        "manaMax": 0.0,
+        "magicIds": [
+          {
+            "id": 1,
+            "cd": 2.0,
+            "cost": 0.0,
+            "pow": 1.0,
+            "qhstones": []
+          }
+        ]
+      },
+      {
+        "$type": "DenemyMoveBrain, Assembly-CSharp",
+        "findEnemyDis": 50.0,
+        "atkDis": -1.0,
+        "mbMinDis": 4,
+        "mbMaxDis": 7.0
+      },
+      {
+        "$type": "Dtag, Assembly-CSharp",
+        "tags": [
+          "enemy"
+        ]
+      }
+    ]
+  }
+
+
+]
